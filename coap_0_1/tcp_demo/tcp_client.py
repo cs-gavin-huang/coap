@@ -1,14 +1,14 @@
 '''
 Author: geekli
 Date: 2021-01-25 10:58:26
-LastEditTime: 2021-01-25 10:58:46
+LastEditTime: 2021-01-25 10:59:34
 LastEditors: your name
 Description: 
 FilePath: /coap_0_1/tcp_demo/tcp_client.py
 '''
 import asyncio
 # replace ip address here
-raspberry_ip_addrss = '192.168.0.8'
+raspberry_ip_addrss = '192.168.1.8'
 class EchoClientProtocol(asyncio.Protocol):
     def __init__(self, message, loop):
         self.message = message
