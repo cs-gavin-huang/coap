@@ -1,7 +1,7 @@
 '''
 Author: geekli
 Date: 2021-01-25 10:25:41
-LastEditTime: 2021-01-25 10:25:43
+LastEditTime: 2021-01-25 10:26:07
 LastEditors: your name
 Description: 
 FilePath: /coap_0_1/udp_demo/udp_server.py
@@ -22,7 +22,7 @@ loop = asyncio.get_event_loop()
 print("Starting UDP server")
 # One protocol instance will be created to serve all client requests
 listen = loop.create_datagram_endpoint(
-    EchoServerProtocol, local_addr=('0.0.0.0', 5678))
+    EchoServerProtocol, local_addr=('0.0.0.0', 5678)) #5683
 transport, protocol = loop.run_until_complete(listen)
 
 try:
